@@ -18,38 +18,43 @@ The data was sourced from the [CMS Medicare dataset on Google BigQuery](https://
 ## SQL Queries
 Each SQL query was used to answer specific questions related to the dataset:
 
-1. **Basic Inpatient Charges Query**:
-   Retrieves basic details about inpatient charges, such as the number of discharges and total payments.
+1. **Basic Inpatient Charges (2015) Query**:
+   Retrieves basic details about inpatient charges, such as provider_state, provider_id, provider_name, and average_total_payments.
    - File: `inpatient charges overview 2015.sql`
 
-2. **Outpatient Claims for California**:
-   Filters outpatient charges data for the state of California, providing insights into outpatient payments and procedures.
+2. **Outpatient Claims for California (2015)**:
+   Filters outpatient charges data for the state of California, providing insights into outpatient payments.
    - File: `outpatient charges in California 2015.sql`
 
-3. **Total Payments by State**:
-   Aggregates Medicare payments by U.S. state for both inpatient and outpatient charges.
+3. **Total Payments by State (2015)**:
+   Aggregates Medicare payments by U.S. state for inpatient charges in 2015.
    - File: `total medicare payments by state 2015.sql`
+  
+4. **Average and Maximum Payments by State (2015)**:
+   calculates the average and maximum Medicare payment for outpatient charges in 2015.
+   - File: `average and maximum payments by state 2015.sql`
 
-4. **Joining Inpatient charges with Provider Information**:
+5. **Joining Inpatient charges with Provider Information**:
    Joins inpatient charges data with provider details to explore patterns in the healthcare services provided.
-   - File: `inpatient charges with provider information.sql`
+   - File: `inpatient charges with provider information 2015.sql`
 
-5. **Combining Inpatient and Outpatient Charges**:
+6. **Combining Inpatient and Outpatient Charges**:
    Merges inpatient and outpatient charges data to provide a comprehensive view of healthcare services across multiple years.
-   - File: `merged inpatient and outpatient charges.sql`
+   - File: `merged inpatient and outpatient charges 2011-2015.sql`
 
-6. **Total Payments for a Specific Diagnosis**:
+7. **Total Payments for a Specific Diagnosis**:
    Analyzes total payments for specific diagnoses, allowing for an understanding of financial impacts related to certain health conditions.
-   - File: `query6_total_payments_diagnosis.sql`
+   - File: `providers with above average payments 2015.sql`
 
 ## Project Structure
 /medicare-SQL-project
-  |- query1_inpatient_claims.sql
-  |- query2_california_outpatient.sql
-  |- query3_total_payments_by_state.sql
-  |- query5_inpatient_provider_join.sql
-  |- query6_total_payments_diagnosis.sql
-  |- query7_combined_inpatient_outpatient.sql
+  |- inpatient_charges_overview_2015.sql
+  |- outpatient_charges_in_California_2015.sql
+  |- total_medicare_payments_by_state_2015.sql
+  |- average_and_maximum_payments_by_state_2015.sql
+  |- inpatient charges with provider information 2015.sql
+  |- merged inpatient and outpatient charges 2011-2015.sql
+  |- providers with above average payments 2015.sql
   |- README.md
 
 ## How to Use
