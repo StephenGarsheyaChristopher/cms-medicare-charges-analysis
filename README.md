@@ -43,4 +43,20 @@ Each SQL query was used to answer specific questions related to the dataset:
    - File: `query6_total_payments_diagnosis.sql`
 
 ## Project Structure
+/medicare-SQL-project
+  |- query1_inpatient_claims.sql
+  |- query2_california_outpatient.sql
+  |- query3_total_payments_by_state.sql
+  |- query5_inpatient_provider_join.sql
+  |- query6_total_payments_diagnosis.sql
+  |- query7_combined_inpatient_outpatient.sql
+  |- README.md
+
+## How to Use
+1. Download and import the Medicare claims data into your SQLite environment.
+2. Run each SQL query to replicate the analysis.
+3. Adjust queries as needed to focus on different regions, providers, or time periods.
+
+## Conclusion
+This project demonstrates essential SQL skills such as filtering, aggregation, and joins. It provides meaningful insights into U.S. healthcare claims using real-world Medicare data.
 
